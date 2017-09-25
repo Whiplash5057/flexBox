@@ -14,8 +14,34 @@ body{
 }
 
 /* menu base styles */
+nav {
+    background: #333;
+}
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
 
+nav a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: #fff;
+    padding: 10px;
+}
 
-
+nav a:hover {
+    background-color: #555;
+}
 /* flex styles */
+
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        /* justify-content: flex-end  OR flex-start OR space-around OR space-between OR space-between*/ 
+        /* align-items: center flex-start flex-end */
+        /* justify-content acts on the main axis and align-items acts on the cross access */
+    }
+}

@@ -1,10 +1,12 @@
+/* //Remember all are block level elements */
+
 *{
     font-family: verdana;
     margin: 0;
 }
 
 body{
-    background: #eee;
+    /* background: #eee; */
 }
 
 .wrapper{
@@ -13,3 +15,35 @@ body{
     margin: 0 auto;
 }
 
+.flex-container {
+    display: flex;
+    background: #fff;
+    flex-wrap: wrap;
+    flex-flow: column;
+    /* flex-flow : row-reverse column-reverse row column; */
+}
+
+.box {
+    height: 100px;
+    /* min-width: 200px; */
+    /* flex-basis: 200px; */
+    /* When the browser shrinks beyond 200px then the scroll bar comes in which doesn't happen with flex-basis */
+    /* flex-grow: 1; */
+    flex: 1 0 200px;
+    /* When the flex flow is row the flex-basis is the min-width; when flex flow is column the min-height */
+    /* flex: growth shrink flex-basis */
+}
+
+.one {
+    background: red;
+    /* flex-shrink: 1; */
+}
+
+.two {
+    background: blue;
+    /* flex-shrink: 5; */
+}
+
+.three {
+    background: green;
+}
